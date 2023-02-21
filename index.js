@@ -65,26 +65,15 @@ const questions = [
     },
 
     {
-        // gh link
-        // to be added under questions
-        type: 'input',
-        message: 'What is your GitHub link?',
-        name: 'gitHubLink',
-
-    },
-
-    {
-        // email address
-        // to be added under questions
         type: 'input',
         message: 'What is your email address?',
         name: 'email',
-
     },
 
 ];
 
 // TODO: Create a function to write README file
+
 function writeToFile(filename, data) {
     fs.writeFile(filename, data, (error) => { if (error) throw error; console.log("Repo created!") });
 }
@@ -104,7 +93,6 @@ function init() {
             console.log(error)
         })
 }
-
 
 // Function call to initialize app
 init();
